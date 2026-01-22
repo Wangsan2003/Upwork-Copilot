@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Upwork Copilot MVP",
+  "version": "1.0",
+  "description": "Scrape Upwork job details for analysis.",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

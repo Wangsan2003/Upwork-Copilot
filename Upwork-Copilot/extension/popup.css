@@ -1,0 +1,94 @@
+/* Modern Clean UI */
+body {
+  width: 340px;
+  padding: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+h3 {
+  margin: 0 0 16px 0;
+  color: #14a800; /* Upwork Brand Green */
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #14a800;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+button:hover { opacity: 0.9; }
+button:disabled { background-color: #ccc; cursor: wait; }
+
+.status-bar {
+  font-size: 12px;
+  color: #666;
+  margin-top: 10px;
+  text-align: center;
+  min-height: 20px;
+}
+
+.result-card {
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 16px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp { 
+  from { opacity: 0; transform: translateY(10px); } 
+  to { opacity: 1; transform: translateY(0); } 
+}
+
+.score-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 8px;
+}
+
+.score-val { font-size: 20px; font-weight: bold; }
+
+ul { padding-left: 18px; margin: 5px 0; }
+li { margin-bottom: 4px; color: #444; font-size: 13px; }
+
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 12px;
+  resize: vertical;
+  background: #fdfdfd;
+  box-sizing: border-box; /* Fix padding issues */
+}
+
+/* Loader Animation */
+.spinner {
+  width: 24px;
+  height: 24px;
+  border: 3px solid #e5e5e5;
+  border-top: 3px solid #14a800;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 15px auto;
+  display: none; 
+}
+
+@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
