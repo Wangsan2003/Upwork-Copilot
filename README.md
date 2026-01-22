@@ -36,17 +36,3 @@ Automatically detects the active **Side Panel (Slider)** on Upwork. It won't get
 
 ---
 
-## 🛠️ Project Structure
-
-This project follows a decoupled architecture:
-
-```text
-Upwork-Copilot/
-├── backend/           # The "Brain" (Python + FastAPI)
-│   ├── main.py        # API Server & AI Logic
-│   └── requirements.txt
-├── extension/         # The "Body" (Chrome Extension)
-│   ├── manifest.json  # V3 Manifest
-│   ├── popup.js       # DOM Scraping & API Calls
-│   └── popup.css      # UI Styling
-└── assets/            # Screenshots & Images
