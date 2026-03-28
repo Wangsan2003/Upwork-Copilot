@@ -9,8 +9,8 @@
 > **Don't waste Connects on bad clients.**  
 > Upwork Copilot is an open-source tool designed to help freelancers instantly detect "Red Flag" clients, reveal hidden financial stats, and draft winning proposals using AI.
 
-![Demo Screenshot](./assets/demo.png)
-*(Note: Please ensure you have a screenshot named 'demo.png' inside the 'assets' folder)*
+![Demo Screenshot](Upwork-Copilot/assets/demo.png)
+
 
 ---
 
