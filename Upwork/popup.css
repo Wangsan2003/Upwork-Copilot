@@ -1,0 +1,88 @@
+/* 现代 SaaS 风格样式 */
+body {
+  width: 320px;
+  margin: 0;
+  padding: 15px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f9fafb;
+  color: #1f2937;
+}
+
+h3 {
+  margin: 0 0 15px 0;
+  font-size: 18px;
+  color: #111827;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* 按钮样式 */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #14a800; /* Upwork Green */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background-color: #108a00;
+}
+
+/* 结果卡片 */
+.result-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 12px;
+  margin-top: 15px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.score-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.score-high { background: #fee2e2; color: #991b1b; } /* 红色背景 */
+.score-low { background: #d1fae5; color: #065f46; } /* 绿色背景 */
+
+ul { padding-left: 20px; margin: 8px 0; }
+li { margin-bottom: 4px; color: #4b5563; font-size: 13px; }
+
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 8px;
+  padding: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 12px;
+  resize: vertical;
+}
+
+/* Loading 动画 */
+.loader {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #14a800;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+  margin: 10px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
